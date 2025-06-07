@@ -1,0 +1,12 @@
+version: '0.1'
+
+services:
+  user-db:
+    image: postgres
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: user1
+      POSTGRES_PASSWORD: user060625
+      POSTGRES_DB: security_database
+    ports:
+      - "5432:5432"
